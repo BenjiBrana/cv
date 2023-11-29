@@ -1,4 +1,7 @@
-function Annee() {
-    var newAnnee = new Date().getFullYear();
-    document.getElementById('currentYear').textContent = newAnnee > 2023 ? " - " + newAnnee : "";
-  }
+function majAnnee(anneeDeDepart) {
+    var anneeEnCours = new Date().getFullYear();
+    document.getElementById('annee').textContent = anneeDeDepart === anneeEnCours ? anneeDeDepart : anneeDeDepart + " - " + anneeEnCours;
+}
+// Année initial
+majAnnee(2023); 
+

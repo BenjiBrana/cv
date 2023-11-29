@@ -11867,13 +11867,17 @@ header h1 small, header .h1 small, header h1 .small, header .h1 .small {
 }
 
 section {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  justify-items: start;
+  align-items: end;
+  justify-content: center;
+  align-content: space-between;
 }
 section article {
   height: 100%;
@@ -11891,7 +11895,7 @@ section article #imgProfil {
   height: 200px;
 }
 section #article1 {
-  grid-area: 1/1/3/4;
+  grid-area: 1/1/5/5;
   border-right: 0.1rem solid #d9d9e0;
   background: #F0F0F3;
 }
@@ -11927,6 +11931,9 @@ section #article1 #reseaux p {
   align-items: center;
   flex-direction: column;
 }
+section #article1 #reseaux p span {
+  padding-left: 1rem;
+}
 section #article1 #reseaux img {
   margin: 1rem auto;
 }
@@ -11939,12 +11946,15 @@ section #article1 #profil {
 section #article1 #profil h2, section #article1 #profil .h2 {
   padding-bottom: 2rem;
 }
+section #article1 #profil p {
+  padding: 2rem;
+}
 section #article1 hr {
   width: 90%;
   border: 0.1rem solid black;
 }
 section #article2 {
-  grid-area: 1/4/2/13;
+  grid-area: 1/5/2/12;
   padding-left: 5rem;
   display: flex;
   flex-direction: column;
@@ -11959,7 +11969,7 @@ section #article2 .card {
 }
 section #article2 .card h2 b, section #article2 .card .h2 b {
   text-transform: uppercase;
-  padding-left: 2rem;
+  padding: 0 2rem;
 }
 section #article2 .card .ulCard {
   color: #60646c;
@@ -11974,9 +11984,6 @@ section #article2 .card .ulCard li .pTitle {
 }
 
 @media only screen and (max-width: 1500px) {
-  section {
-    width: 90%;
-  }
   section #article1 {
     padding: 1rem;
   }
@@ -11986,21 +11993,22 @@ section #article2 .card .ulCard li .pTitle {
 }
 @media only screen and (max-width: 800px) {
   section {
-    width: 90%;
+    width: 100%;
   }
   section #article1 {
-    grid-area: 1/1/4/6;
+    grid-area: 1/1/4/5;
   }
   section #article2 {
     grid-area: 1/6/2/13;
     padding-left: 1rem;
+    padding-right: 2rem;
   }
   section #article2 h2, section #article2 .h2 {
     font-size: 1.5rem;
   }
 }
 footer {
-  grid-area: 2/4/3/13;
+  grid-area: 2/5/3/13;
   margin-top: 3rem;
   padding: 2rem 10rem;
   display: flex;
