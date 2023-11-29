@@ -1,0 +1,20 @@
+{
+  "name": "deikko",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass Design/sass/default.scss Design/css/default.css",
+    "sass:watch": "sass --watch Design/sass/default.scss:Design/css/default.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}

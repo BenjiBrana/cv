@@ -1,0 +1,12 @@
+footer{
+    grid-area: 2/4/3/13;
+    margin-top: 3rem;
+    padding: 2rem 10rem;
+    @include flex(column, center,start, center);
+}
+@media only screen and (max-width: 800px) {
+    footer{
+        grid-area: 2/5/3/13;
+        margin-top: 1rem;
+    }   
+}
