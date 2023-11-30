@@ -18,6 +18,13 @@ $textColor: #60646c;
     align-items: $alignItems;
     align-content: $alignContent;
 }
+@mixin grid($gridTemplateColumns, $gridTemplateRows, $gridColumnGap, $gridRowGap) {
+    display: grid;
+    grid-template-columns: $gridTemplateColumns;
+    grid-template-rows: $gridTemplateRows;
+    grid-column-gap: $gridColumnGap;
+    grid-row-gap: $gridRowGap;
+}
 //Fonts
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap");
@@ -41,7 +48,7 @@ html {
     font-size: 62.5%; //1rem = 10px
 }
 body {
-    @include flex(column,start,center,center);
+    @include flex(column, start, center, center);
     background: $backgroundColor;
     color: $textColor;
     height: 100vh;
