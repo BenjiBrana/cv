@@ -11857,12 +11857,47 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-header h1, header .h1 {
+header {
+  width: 100vw;
+  grid-area: 1/1/2/12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+header #photoProfil {
+  grid-area: 1/1/2/5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  padding-left: 5rem;
+}
+header #imgProfil {
+  border: 0.2rem solid #d9d9e0;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  width: 200px;
+  height: 200px;
+}
+header #titrePage {
+  grid-area: 1/6/2/12;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+}
+header #titrePage h1, header #titrePage .h1 {
   margin: 3rem 0;
   font-size: 2.5rem;
-  color: rgb(212, 160, 28);
 }
-header h1 small, header .h1 small, header h1 .small, header .h1 .small {
+header #titrePage h1 small, header #titrePage .h1 small, header #titrePage h1 .small, header #titrePage .h1 .small {
   font-size: 1.2rem;
 }
 
@@ -11878,42 +11913,6 @@ section {
   align-items: end;
   justify-content: center;
   align-content: space-between;
-}
-section header {
-  width: 100vw;
-  grid-area: 1/1/2/12;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-section header #photoProfil {
-  grid-area: 1/1/2/5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  width: 100%;
-  padding-left: 5rem;
-}
-section header #imgProfil {
-  border: 0.2rem solid #d9d9e0;
-  border-radius: 1rem;
-  margin: 2rem auto;
-  width: 200px;
-  height: 200px;
-}
-section header #titrePage {
-  grid-area: 1/6/2/12;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  align-content: center;
-  width: 100%;
-  height: 100%;
 }
 section article {
   height: 100%;
