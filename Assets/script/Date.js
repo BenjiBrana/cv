@@ -1,5 +1,5 @@
 function majAnnee(anneeDeDepart) {
-    var anneeEnCours = new Date().getFullYear();
+    let anneeEnCours = new Date().getFullYear();
     document.getElementById('annee').textContent = anneeDeDepart === anneeEnCours ? anneeDeDepart : anneeDeDepart + " - " + anneeEnCours;
 }
 // Année initial

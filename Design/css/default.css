@@ -11902,7 +11902,7 @@ header #titrePage h1 small, header #titrePage .h1 small, header #titrePage h1 .s
 }
 
 section {
-  width: 100vw;
+  width: 99vw;
   min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -12116,7 +12116,7 @@ body {
   background: #fcfcfd;
   color: #60646c;
   height: 100vh;
-  width: 100vw;
+  width: 99vw;
   font-size: 1.6rem;
   font-family: "Righteous", cursive;
 }
