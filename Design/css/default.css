@@ -11972,7 +11972,7 @@ section #article1 #profil h2, section #article1 #profil .h2 {
   padding-bottom: 2rem;
 }
 section #article1 #profil p {
-  padding: 2rem;
+  padding: 4rem;
 }
 section #article1 hr {
   width: 90%;
@@ -12132,6 +12132,12 @@ body .h5,
 body h6,
 body .h6 {
   color: #1c2024;
+}
+body a {
+  color: #60646c;
+}
+body a:hover {
+  color: #80838D;
 }
 
 @media only screen and (max-width: 1500px) {

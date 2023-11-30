@@ -7,6 +7,7 @@ $backgroundHover:#E8E8EC;
 $borderColor: #d9d9e0;
 $textColorImportant: #1c2024;
 $textColor: #60646c;
+$textColorHover: #80838D;
 
 //Heritage
 
@@ -62,6 +63,12 @@ body {
     h5,
     h6 {
         color: $textColorImportant;
+    }
+    a{
+        color: $textColor;
+        &:hover{
+            color: $textColorHover;
+        }
     }
     
 }
