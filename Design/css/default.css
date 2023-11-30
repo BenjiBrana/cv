@@ -12046,6 +12046,7 @@ section #article2 .card .ulCard li .pTitle {
 }
 @media only screen and (max-width: 700px) {
   section {
+    margin: 0;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
@@ -12109,6 +12110,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: start;

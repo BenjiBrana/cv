@@ -50,6 +50,7 @@ html {
 }
 body {
     margin: 0;
+    overflow-x: hidden;
     @include flex(column, start, center, center);
     background: $backgroundColor;
     color: $textColor;
