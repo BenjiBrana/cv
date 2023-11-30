@@ -49,11 +49,12 @@ html {
     font-size: 62.5%; //1rem = 10px
 }
 body {
+    margin: 0;
     @include flex(column, start, center, center);
     background: $backgroundColor;
     color: $textColor;
     height: 100vh;
-    width: 99vw;
+    width: 100%;
     font-size: 1.6rem;
     font-family: "Righteous", cursive;
     h1,
