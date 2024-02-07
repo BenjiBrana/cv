@@ -1,86 +1,90 @@
 //Variable
 $gold: rgb(212, 160, 28);
 $backgroundColor: #fcfcfd;
-$backgroundInterface:#F0F0F3;
+$backgroundInterface: #f0f0f3;
 $backgroundElement: #8b8d98;
-$backgroundHover:#E8E8EC;
+$backgroundHover: #e8e8ec;
 $borderColor: #d9d9e0;
 $textColorImportant: #1c2024;
 $textColor: #60646c;
-$textColorHover: #80838D;
+$textColorHover: #80838d;
 
 //Heritage
 
 //Mixin
 @mixin flex($flex-direction, $justify, $alignItems, $alignContent) {
-    display: flex;
-    flex-direction: $flex-direction;
-    justify-content: $justify;
-    align-items: $alignItems;
-    align-content: $alignContent;
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify;
+  align-items: $alignItems;
+  align-content: $alignContent;
 }
-@mixin grid($gridTemplateColumns, $gridTemplateRows, $gridColumnGap, $gridRowGap) {
-    display: grid;
-    grid-template-columns: $gridTemplateColumns;
-    grid-template-rows: $gridTemplateRows;
-    grid-column-gap: $gridColumnGap;
-    grid-row-gap: $gridRowGap;
+@mixin grid(
+  $gridTemplateColumns,
+  $gridTemplateRows,
+  $gridColumnGap,
+  $gridRowGap
+) {
+  display: grid;
+  grid-template-columns: $gridTemplateColumns;
+  grid-template-rows: $gridTemplateRows;
+  grid-column-gap: $gridColumnGap;
+  grid-row-gap: $gridRowGap;
 }
 //Fonts
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
 
 //Import
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "./Header";
-@import "./Section";
-@import "./Footer";
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './Header';
+@import './Section';
+@import './Footer';
 
 //Général
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 html {
-    font-size: 62.5%; //1rem = 10px
+  font-size: 62.5%; //1rem = 10px
 }
 body {
-    margin: 0;
-    overflow-x: hidden;
-    @include flex(column, start, center, center);
-    background: $backgroundColor;
+  margin: 0;
+  overflow-x: hidden;
+  @include flex(column, start, center, center);
+  background: $backgroundColor;
+  color: $textColor;
+  height: 100vh;
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: 'Righteous', cursive;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $textColorImportant;
+  }
+  a {
     color: $textColor;
-    height: 100vh;
-    width: 100%;
-    font-size: 1.6rem;
-    font-family: "Righteous", cursive;
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: $textColorImportant;
+    &:hover {
+      color: $textColorHover;
     }
-    a{
-        color: $textColor;
-        &:hover{
-            color: $textColorHover;
-        }
-    }
-    
+  }
 }
 @media only screen and (max-width: 1500px) {
-    body{
-        align-items: flex-start;
-    }   
+  body {
+    align-items: flex-start;
+  }
 }
 @media only screen and (max-width: 800px) {
-    body{
-        font-size: 1.4rem;
-    }   
+  body {
+    font-size: 1.4rem;
+  }
 }
